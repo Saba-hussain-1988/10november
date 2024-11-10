@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+
+  background: #2f3838;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textPortion{
+  align-items: center;
+  width: 70%;
+  padding-left: 10%;
+}
+h2, h1, h3{
+  color:aliceblue;
+  font-size: 1.5vw;
+  font-weight: 200;
+  margin: 10px;
+}
+
+h2 div{
+  padding-left: 30px;
+  position: relative;
+  font-size: 6vw;
+  font-weight: 800;
+  color: #2f3838;
+  -webkit-text-stroke: 0.1vw #426060;
+  text-transform: uppercase;
+}
+h3 div{
+  padding-left: 40px;
+  position: relative;
+  font-size: 2vw;
+  font-weight: 400;
+  color: #2f3838;
+  -webkit-text-stroke: 0.1vw #426060;
+}
+h3 div::before, h2 div::before{
+  content: attr(data-text);
+  position: absolute;
+  
+  left: 40px;
+  width: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  color:#76ffe8;
+  -webkit-text-stroke: 0vw #323a3284;
+  border-right: 2px solid #7dfaf2;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate 
+{
+  0%, 10%, 50%, 100%
+  {width: 0;}
+  70%, 90%, 100%
+  {width: 100%;}
+}
+
+p{
+  color: #b1f7eb;
+  width: 60%;
+  text-align: center;
+}
+.imageContainer{
+  width: 30%;
+  border: none;
+  border-radius: 50% 0 0 50%;
+}
+.image{
+  width: 100%;
+  border-radius: 50% 0 0 50%;
+}
+
+
+/* Responsive adjustments for p and textPortion on smaller screens */
+@media (max-width: 768px) {
+  .textPortion {
+    width: 80%; /* Increase width to fill more of the screen */
+    padding-left: 5%;
+  }
+
+  p {
+    width: 80%;
+    font-size: 1rem; /* Slightly smaller font for medium screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .textPortion {
+    width: 100%; /* Full width on small screens */
+    padding-left: 0;
+  }
+
+  p {
+    width: 100%; /* Full width for paragraphs on small screens */
+    font-size: 0.9rem; /* Smaller font size for small screens */
+    padding: 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 4vw; /* Smaller font size for headings on small screens */
+  }
+
+  h2 div, h3 div {
+    font-size: 5vw; /* Adjust div font size for smaller screens */
+    padding-left: 10px;
+  }
+}
+
+.imageContainer {
+  width: 30%;
+  border: none;
+  border-radius: 50% 0 0 50%;
+}
+
+/* Responsive image adjustments */
+@media (max-width: 768px) {
+  .imageContainer {
+    width: 40%; /* Increase width for image container */
+  }
+}
+
+@media (max-width: 500px) {
+  .imageContainer {
+    width: 60%; /* Full width for images on small screens */
+    margin: 20px auto;
+  }
+
+  .image {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
