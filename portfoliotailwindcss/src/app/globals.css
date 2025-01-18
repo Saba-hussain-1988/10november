@@ -7,21 +7,44 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Responsive styling with Tailwind */
+@media (min-width: 640px) {
+  .sm\:font-bold {
+    font-weight: bold;
+  }
+  .sm\:max-w-[px] {
+    max-width: 200px;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (max-width: 500px) {
+  .row {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  #pic_box {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #pic {
+    width: 100%;
+    height: auto;
+    border-radius: 80px;
+  }
+  #course,
+  #experience,
+  #personalInformation,
+  #goal,
+  #skill,
+  #award {
+    width: 95%;
+    padding: 5px;
+    text-align: center;
+  }
+  .education {
+    width: 95%;
+    padding: 5px;
+    text-align: center;
   }
 }

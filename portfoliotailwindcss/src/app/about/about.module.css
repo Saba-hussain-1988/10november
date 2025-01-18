@@ -1,0 +1,122 @@
+.container{
+    background: #2f3838;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.h1{
+   padding: 10px 20px;
+   font-size: 3em;
+   font-weight: 400; 
+   text-align: center;
+}
+.p{
+   width: 100%; 
+   padding: 10px 20px;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+.div1{
+
+    background-color: chocolate;
+    border: 2px solid black;
+    border-radius: 0 80% 0 80%;
+}
+.div2{
+    height: 100%;
+    width: 100%;
+    background-color: chocolate;
+    border: 2px solid black;
+    border-radius: 80% 0  80% 0;
+}
+.image1 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 80%;
+}
+
+
+/* Responsive font size for h1 */
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 2.5em;
+    }
+}
+
+.p {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+/* Responsive adjustments for p text */
+@media (max-width: 768px) {
+    .p {
+        font-size: 24px; /* Slightly smaller font for medium screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .p {
+        font-size: 18px; /* Smaller font size for small screens */
+        padding: 5px 10px;
+        margin: 10px;
+    }
+}
+
+.div1 {
+    background-color: chocolate;
+    border: 2px solid black;
+    border-radius: 0 80% 0 80%;
+    height: 60%;
+    width: 60%;
+}
+
+.div2 {
+    height: 100%;
+    width: 100%;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 80% 0 80% 0;
+}
+
+.image1 {
+    height: 80%;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 80%;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 5%;
+    }
+
+    .div1,
+    .div2,
+    .image1 {
+        width: 80%; /* Reduce width to fit better on smaller screens */
+        margin: 0 auto; /* Center the divs */
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 2%;
+    }
+
+    .div1,
+    .div2,
+    .image1 {
+        width: 90%; /* Full width for small screens */
+    }
+}
