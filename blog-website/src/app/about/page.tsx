@@ -1,5 +1,5 @@
 import Image from "next/image"
-
+import desk from "../../public/profile pic.jpg"
 
 const Page = () => {
   return (
@@ -8,11 +8,11 @@ const Page = () => {
         {/* Image Section - Left Side */}
         <div className="md:w-1/2 mb-8 md:mb-0">
           <Image
-            src="/desk.webp" // Make sure this image exists in the public folder
+            src={desk} // Make sure this image exists in the public folder
             alt="Blog Preview"
-            width={800} // Adjusted width
+            width={600} // Adjusted width
             height={400} // Adjusted height
-            className="rounded shadow w-full h-full"
+            className="rounded shadow"
           />
         </div>
 

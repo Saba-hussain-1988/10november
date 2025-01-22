@@ -21,12 +21,12 @@ const Header = () => {
 
 
   return (
-    <header className="bg-black p-3 shadow  fixed w-screen opacity-80"> 
+    <header className="h-[70px] bg-black p-3 shadow  fixed w-screen opacity-80 flex items-center"> 
     
     <div className="container mx-auto flex justify-between items-center">
-    <div className="flex items-center">
-    <div className=" relative w-0 h-0 border-l-[20px] border-r-[20px] border-t-[26px] 
-    border-l-transparent border-r-transparent border-t-[#007580] rounded-full hover:opacity-50 cursor-pointer"/>
+      <div className="flex items-center">
+        <div className=" relative w-0 h-0 border-l-[20px] border-r-[20px] border-t-[26px] 
+           border-l-transparent border-r-transparent border-t-[#007580] rounded-full hover:opacity-50 cursor-pointer"/>
     
       <h1 className="pl-2 text-xl font-bold text-white hover:opacity-50 cursor-pointer">My Dynamic Blog</h1>
     
